@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "titulo": "Dune",
+    "imagen": "dune.jpg",
+    "genero": ["Aventura", "Ciencia Ficción", "Drama"],
+    "sinopsis": "Un joven emprende una misión para salvar su mundo.",
+    "trailer": "https://www.youtube.com/embed/mSY_NbSmaUI"
+  },
+  {
+    "id": 2,
+    "titulo": "50 primeras citas",
+    "imagen": "50-primeras-citas.jpg",
+    "genero": ["Comedia", "Romance", "Drama"],
+    "sinopsis": "Henry se enamora de Lucy, una mujer con pérdida de memoria a corto plazo.",
+    "trailer": "https://www.youtube.com/embed/17KJk3ErIx0"
+  },
+  {
+    "id": 3,
+    "titulo": "Batman Caballero de la Noche",
+    "imagen": "batman-caballero-de-la-noche.webp",
+    "genero": ["Acción", "Crimen", "Drama"],
+    "sinopsis": "La película comienza con el violento robo de uno de los bancos de la mafia por una banda de payasos.",
+    "trailer": "https://www.youtube.com/embed/dzQtWkpc2-c"
+  },
+  {
+    "id": 4,
+    "titulo": "Destino Final: Lazos de Sangre",
+    "imagen": "destino-final-lazos-de-sangre.webp",
+    "genero": ["Terror", "Sobrenatural", "Suspenso"],
+    "sinopsis": "Atormentada por una violenta pesadilla recurrente, Stefani, una estudiante universitaria, regresa a casa para encontrar a la única persona que podría romper el ciclo y salvar a su familia de una muerte inevitable.",
+    "trailer": "https://www.youtube.com/embed/8FudANSsWNQ"
+  },
+  {
+    "id": 5,
+    "titulo": "Demon Slayer: Castillo Infinito",
+    "imagen": "castillo-infinito.png",
+    "genero": ["Anime", "Acción", "Aventura"],
+    "sinopsis": "El Cuerpo de Cazadores de Demonios se enfrenta a los Doce Kizuki restantes antes de enfrentarse a Muzan en el Castillo del Infinito para derrotarlo de una vez por todas.",
+    "trailer": "https://www.youtube.com/embed/1iBnWJKbvHI"
+  },
+  {
+    "id": 6,
+    "titulo": "Misión Imposible: Sentencia Final",
+    "imagen": "sentencia-final.jpg",
+    "genero": ["Acción", "Aventura", "Suspenso"],
+    "sinopsis": "Misión Imposible: Sentencia Final trae de nuevo a Ethan Hunt y su equipo para la misión más arriesgada hasta el momento. Ahora deben enfrentarse a “La Entidad”, una inteligencia artificial fuera de control que amenaza con colapsar el equilibrio mundial. El reloj no deja de avanzar y ciertas alianzas se fracturan, dejando a Ethan sin muchas opciones más que encontrarse cara a cara con la responsabilidad y su propia mortalidad.",
+    "trailer": "https://www.youtube.com/embed/cPaEof1KJDg"
+  },
+  {
+    "id": 7,
+    "titulo": "Lilo y Stitch",
+    "imagen": "lilo.webp",
+    "genero": ["Familia", "Comedia", "Aventura"],
+    "sinopsis": "Lilo es una niña hawaiana creativa y peculiar que vive con su hermana mayor, Nani, tras la muerte de sus padres. Ambas intentan mantener unida su pequeña familia mientras se enfrentan a la amenaza de ser separadas por los servicios sociales debido a su situación inestable. Un día, Lilo adopta en un refugio a lo que cree que es un perro, pero en realidad es Stitch, un experimento alienígena fugitivo creado para el caos y la destrucción. A pesar de su naturaleza violenta, Stitch descubre el valor del amor, la familia y el sentido de pertenencia gracias al vínculo único que desarrolla con Lilo. Pero Stitch, al ser un fugitivo, corre peligro y su creador va en su búsqueda a la Tierra, poniendo patas arriba la ciudad en la que viene y la vida que comparten. Así, juntos, se enfrentarán a agentes galácticos y desafíos emocionales en una historia que mezcla humor, acción y ternura, resaltando el poder de la ‘ohana’, la familia que uno elige.",
+    "trailer": "https://www.youtube.com/embed/9JIyINjMfcc"
+  },
+  {
+    "id": 8,
+    "titulo": "Culpa Nuestra",
+    "imagen": "Culpa-nuestra.jpg",
+    "genero": ["Romance", "Drama", "Película de Secuela"],
+    "sinopsis": "La boda de Jenna y Lion propicia el tan deseado reencuentro entre Noah y Nick tiempo después de su ruptura. La incapacidad de Nick para perdonar a Noah se alza como una barrera insalvable. Él, heredero de las empresas de su abuelo y ella, empezando su vida laboral, se resisten a alimentar una llama que aún sigue viva. Pero una vez que sus caminos se han vuelto a cruzar, ¿será el amor más fuerte que el rencor? Secuela de 'Culpa tuya'.",
+    "trailer": "https://www.youtube.com/embed/9oxYM2OTkHY"
+  },
+  {
+    "id": 9,
+    "titulo": "Los tipos malos 2",
+    "imagen": "tipos-malos-2.webp",
+    "genero": ["Animación", "Comedia", "Aventura"],
+    "sinopsis": "Un genial equipo de animales que no respetan la ley, los ahora muy reformados Tipos Malos, se esfuerzan (mucho, muchísimo) en ser buenos, pero se ven envueltos involuntariamente en un golpe de envergadura mundial planeado por un inesperado grupo de criminales: las Tipas Malas.",
+    "trailer": "https://www.youtube.com/embed/VQIxX-VwrDI"
+  }
+]
