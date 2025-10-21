@@ -4,24 +4,39 @@
     "titulo": "Dune",
     "imagen": "dune.jpg",
     "genero": ["Aventura", "Ciencia Ficción", "Drama"],
-    "sinopsis": "Un joven emprende una misión para salvar su mundo.",
-    "trailer": "https://www.youtube.com/embed/mSY_NbSmaUI"
+    "sinopsis": "Dune, se ha convertido en el planeta más importante del universo. A su alrededor comienza una gigantesca lucha por el poder que culmina en una guerra interestelar. Paul Atreides, un joven brillante y dotado nacido en una familia noble, debe viajar al planeta más peligroso del cosmos para asegurar el futuro de su familia y de su pueblo. Mientras fuerzas malévolas explotan el conflicto político del planeta para sus propios fines, solo aquellos que puedan conquistar su miedo sobrevivirán. Paul deberá hacer un viaje extraordinario que cambiará el destino de la humanidad.",
+    "trailer": "https://www.youtube.com/embed/mSY_NbSmaUI",
+    "estreno": "2021-10-22",
+    "precios": {
+      "normal": 5.00,
+      "estreno": 8.00
+    }
   },
   {
     "id": 2,
     "titulo": "50 primeras citas",
     "imagen": "50-primeras-citas.jpg",
     "genero": ["Comedia", "Romance", "Drama"],
-    "sinopsis": "Henry se enamora de Lucy, una mujer con pérdida de memoria a corto plazo.",
-    "trailer": "https://www.youtube.com/embed/17KJk3ErIx0"
+    "sinopsis": "Henry, biólogo marino, no tiene la mínima intención de comprometerse con nadie, hasta que conoce a Lucy, la chica de sus sueños. Sin embargo, hay un pequeño problema, la joven se levanta cada mañana sin recordar absolutamente nada del día anterior.",
+    "trailer": "https://www.youtube.com/embed/17KJk3ErIx0",
+    "estreno": "2004-02-13",
+    "precios": {
+      "normal": 5.00,
+      "estreno": 8.00
+    }
   },
   {
     "id": 3,
     "titulo": "Batman Caballero de la Noche",
     "imagen": "batman-caballero-de-la-noche.webp",
     "genero": ["Acción", "Crimen", "Drama"],
-    "sinopsis": "La película comienza con el violento robo de uno de los bancos de la mafia por una banda de payasos.",
-    "trailer": "https://www.youtube.com/embed/dzQtWkpc2-c"
+    "sinopsis": "Batman tiene que mantener el equilibrio entre el heroísmo y el vigilantismo para pelear contra un vil criminal conocido como el Guasón, que pretende orillar a Ciudad Gótica a la anarquía.",
+    "trailer": "https://www.youtube.com/embed/dzQtWkpc2-c",
+    "estreno": "2008-07-18",
+    "precios": {
+      "normal": 5.00,
+      "estreno": 8.00
+    }
   },
   {
     "id": 4,
@@ -29,7 +44,12 @@
     "imagen": "destino-final-lazos-de-sangre.webp",
     "genero": ["Terror", "Sobrenatural", "Suspenso"],
     "sinopsis": "Atormentada por una violenta pesadilla recurrente, Stefani, una estudiante universitaria, regresa a casa para encontrar a la única persona que podría romper el ciclo y salvar a su familia de una muerte inevitable.",
-    "trailer": "https://www.youtube.com/embed/8FudANSsWNQ"
+    "trailer": "https://www.youtube.com/embed/8FudANSsWNQ",
+    "estreno": "2023-10-27",
+    "precios": {
+      "normal": 5.00,
+      "estreno": 8.00
+    }
   },
   {
     "id": 5,
@@ -37,7 +57,12 @@
     "imagen": "castillo-infinito.png",
     "genero": ["Anime", "Acción", "Aventura"],
     "sinopsis": "El Cuerpo de Cazadores de Demonios se enfrenta a los Doce Kizuki restantes antes de enfrentarse a Muzan en el Castillo del Infinito para derrotarlo de una vez por todas.",
-    "trailer": "https://www.youtube.com/embed/1iBnWJKbvHI"
+    "trailer": "https://www.youtube.com/embed/1iBnWJKbvHI",
+    "estreno": "2025-07-25",
+    "precios": {
+      "normal": 5.00,
+      "estreno": 8.00
+    }
   },
   {
     "id": 6,
@@ -45,7 +70,12 @@
     "imagen": "sentencia-final.jpg",
     "genero": ["Acción", "Aventura", "Suspenso"],
     "sinopsis": "Misión Imposible: Sentencia Final trae de nuevo a Ethan Hunt y su equipo para la misión más arriesgada hasta el momento. Ahora deben enfrentarse a “La Entidad”, una inteligencia artificial fuera de control que amenaza con colapsar el equilibrio mundial. El reloj no deja de avanzar y ciertas alianzas se fracturan, dejando a Ethan sin muchas opciones más que encontrarse cara a cara con la responsabilidad y su propia mortalidad.",
-    "trailer": "https://www.youtube.com/embed/cPaEof1KJDg"
+    "trailer": "https://www.youtube.com/embed/cPaEof1KJDg",
+    "estreno": "2025-05-21",
+    "precios": {
+      "normal": 5.00,
+      "estreno": 8.00
+    }
   },
   {
     "id": 7,
@@ -53,7 +83,12 @@
     "imagen": "lilo.webp",
     "genero": ["Familia", "Comedia", "Aventura"],
     "sinopsis": "Lilo es una niña hawaiana creativa y peculiar que vive con su hermana mayor, Nani, tras la muerte de sus padres. Ambas intentan mantener unida su pequeña familia mientras se enfrentan a la amenaza de ser separadas por los servicios sociales debido a su situación inestable. Un día, Lilo adopta en un refugio a lo que cree que es un perro, pero en realidad es Stitch, un experimento alienígena fugitivo creado para el caos y la destrucción. A pesar de su naturaleza violenta, Stitch descubre el valor del amor, la familia y el sentido de pertenencia gracias al vínculo único que desarrolla con Lilo. Pero Stitch, al ser un fugitivo, corre peligro y su creador va en su búsqueda a la Tierra, poniendo patas arriba la ciudad en la que viene y la vida que comparten. Así, juntos, se enfrentarán a agentes galácticos y desafíos emocionales en una historia que mezcla humor, acción y ternura, resaltando el poder de la ‘ohana’, la familia que uno elige.",
-    "trailer": "https://www.youtube.com/embed/9JIyINjMfcc"
+    "trailer": "https://www.youtube.com/embed/9JIyINjMfcc",
+    "estreno": "2025-06-21",
+    "precios": {
+      "normal": 5.00,
+      "estreno": 8.00
+    }
   },
   {
     "id": 8,
@@ -61,7 +96,12 @@
     "imagen": "Culpa-nuestra.jpg",
     "genero": ["Romance", "Drama", "Película de Secuela"],
     "sinopsis": "La boda de Jenna y Lion propicia el tan deseado reencuentro entre Noah y Nick tiempo después de su ruptura. La incapacidad de Nick para perdonar a Noah se alza como una barrera insalvable. Él, heredero de las empresas de su abuelo y ella, empezando su vida laboral, se resisten a alimentar una llama que aún sigue viva. Pero una vez que sus caminos se han vuelto a cruzar, ¿será el amor más fuerte que el rencor? Secuela de 'Culpa tuya'.",
-    "trailer": "https://www.youtube.com/embed/9oxYM2OTkHY"
+    "trailer": "https://www.youtube.com/embed/9oxYM2OTkHY",
+    "estreno": "2025-10-16",
+    "precios": {
+      "normal": 5.00,
+      "estreno": 8.00
+    }
   },
   {
     "id": 9,
@@ -69,6 +109,11 @@
     "imagen": "tipos-malos-2.webp",
     "genero": ["Animación", "Comedia", "Aventura"],
     "sinopsis": "Un genial equipo de animales que no respetan la ley, los ahora muy reformados Tipos Malos, se esfuerzan (mucho, muchísimo) en ser buenos, pero se ven envueltos involuntariamente en un golpe de envergadura mundial planeado por un inesperado grupo de criminales: las Tipas Malas.",
-    "trailer": "https://www.youtube.com/embed/VQIxX-VwrDI"
+    "trailer": "https://www.youtube.com/embed/VQIxX-VwrDI",
+    "estreno": "2025-07-03",
+    "precios": {
+      "normal": 5.00,
+      "estreno": 8.00
+    }
   }
 ]
