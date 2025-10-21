@@ -43,10 +43,15 @@
 
               <!-- Componente: Badge de género -->
               <span id="genero" class="badge bg-secondary"></span>
+              <!-- Componente: Badge de estado -->
+              <span id="estado" class="badge"></span>
+               <!-- Precio -->
+              <p id="precio" class="mt-2"></p>
             </div>
           </div>
         </div>
       </div>
+      
 
       <div class="text-center">
         <a href="../index.html" class="btn btn-secondary">Volver al inicio</a>
@@ -70,7 +75,30 @@
               $("#poster").attr("src", "../img/" + peli.imagen);
               $("#sinopsis").text(peli.sinopsis);
               $("#trailer").attr("src", peli.trailer);
-              $("#genero").text(peli.genero);
+              $("#genero").text(peli.genero.join(", "));
+              
+              // Calculo de estado de estreno
+              const hoy = new Date();
+              const fechaEstreno = new Date(peli.estreno);
+              const diasDesdeEstreno = (hoy - fechaEstreno) / (1000 * 60 * 60 * 24);
+              const esEstreno = diasDesdeEstreno <= 120;
+              
+              // badge dinamico
+              if (esEstreno) {
+                $("#estado")
+                  .text("Estreno")
+                  .removeClass()
+                  .addClass("badge bg-success");
+              } else {
+                $("#estado")
+                  .text("Cartelera regular")
+                  .removeClass()
+                  .addClass("badge bg-secondary");
+              }
+
+              //precio dinamico
+              const precio = esEstreno ? peli.precios.estreno : peli.precios.normal;
+              $("#precio").html(`<strong>Precio:</strong> $${precio.toFixed(2)}`);
             } else {
               mostrarError();
             }
