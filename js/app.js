@@ -4,26 +4,29 @@ $(document).ready(function () {
       method: "GET",
       dataType: "json",
       success: function (peliculas) {
-        let html = "";
-        peliculas.forEach(function (peli) {
-          const hoy = new Date();
-          const fechaEstreno = new Date(peli.estreno);
-          const esEstreno = (hoy - fechaEstreno) / (1000 * 60 * 60 * 24) <= 120;
-          const precio = esEstreno ? peli.precios.estreno : peli.precios.normal;
-          html += `
-            <div class="col-md-4">
-              <div class="card h-100 shadow">
-                <img src="img/${peli.imagen}" class="card-img-top" alt="${peli.titulo}">
-                <div class="card-body">
-                  <h5 class="card-title">${peli.titulo}</h5>
-                  <p class="card-text"><strong>Géneros: </strong>${peli.genero.join(", ")}</p>
-                  <p class="card-text"><strong>Precio: </strong> $${precio.toFixed(2)}</strong></p>
-                  <a href="pages/detalle.html?id=${peli.id}" class="btn btn-primary">Ver más</a>
+        // Espera 5 segundos antes de mostrar las películas
+        setTimeout(function() {
+          let html = "";
+          peliculas.forEach(function (peli) {
+            const hoy = new Date();
+            const fechaEstreno = new Date(peli.estreno);
+            const esEstreno = (hoy - fechaEstreno) / (1000 * 60 * 60 * 24) <= 120;
+            const precio = esEstreno ? peli.precios.estreno : peli.precios.normal;
+            html += `
+              <div class="col-md-4">
+                <div class="card h-100 shadow">
+                  <img src="img/${peli.imagen}" class="card-img-top" alt="${peli.titulo}">
+                  <div class="card-body">
+                    <h5 class="card-title">${peli.titulo}</h5>
+                    <p class="card-text"><strong>Géneros: </strong>${peli.genero.join(", ")}</p>
+                    <p class="card-text"><strong>Precio: </strong> $${precio.toFixed(2)}</strong></p>
+                    <a href="pages/detalle.html?id=${peli.id}" class="btn btn-primary">Ver más</a>
+                  </div>
                 </div>
-              </div>
-            </div>`;
-        });
-        $("#lista-peliculas").html(html);
+              </div>`;
+          });
+          $("#lista-peliculas").html(html);
+        }, 5000); // 5 segundos
       },
       error: function (xhr, status, error) {
         console.error("Error al cargar las películas:", error);
