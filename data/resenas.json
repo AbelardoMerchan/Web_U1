@@ -1,0 +1,74 @@
+[
+{
+    "peliculaId": 1,
+    "reseñas": [
+    { "usuario": "Ana", "comentario": "Una obra maestra visual.", "calificacion": 5 },
+    { "usuario": "Luis", "comentario": "La historia me atrapó.", "calificacion": 4 },
+    { "usuario": "Clara", "comentario": "Un poco larga pero buena.", "calificacion": 3 }
+    ]
+},
+{
+    "peliculaId": 2,
+    "reseñas": [
+    { "usuario": "Pedro", "comentario": "Muy divertida y romántica.", "calificacion": 4 },
+    { "usuario": "María", "comentario": "Excelente para ver en pareja.", "calificacion": 5 },
+    { "usuario": "Juan", "comentario": "La vi varias veces.", "calificacion": 4 }
+    ]
+},
+{
+    "peliculaId": 3,
+    "reseñas": [
+    { "usuario": "Jonny", "comentario": "Muy buena, merece verla de nuevo.", "calificacion": 5 },
+    { "usuario": "Elías", "comentario": "Interesante, tiene lo suyo", "calificacion": 4 },
+    { "usuario": "Lucía", "comentario": "No me gustó mucho.","calificacion": 3 }
+    ]
+},
+{
+    "peliculaId": 4,
+    "reseñas": [
+    { "usuario": "Wilmer", "comentario": "Me pareció buena.", "calificacion": 4 },
+    { "usuario": "Elena", "comentario": "Fenomenal, cumplió mis espectativas.", "calificacion": 5 },
+    { "usuario": "Steven", "comentario": "Muy sobrevalorada, las anteriores eran mejor.", "calificacion": 2 }
+    ]
+},
+{
+    "peliculaId": 5,
+    "reseñas": [
+    { "usuario": "Félix", "comentario": "Una locura la animación.", "calificacion": 5 },
+    { "usuario": "Antonio", "comentario": "Buena historia y animación", "calificacion": 4 },
+    { "usuario": "Lorena", "comentario": "Muy buena, a espera de la siguiente entrega.", "calificacion": 5 }
+    ]
+},
+{
+"peliculaId": 6,
+    "reseñas": [
+    { "usuario": "Mariana", "comentario": "Me pareció buena, adoro las escenas de peligro.", "calificacion": 4 },
+    { "usuario": "Victor", "comentario": "De las mejores películas de Tom Cruise", "calificacion": 5 },
+    { "usuario": "Jonathan", "comentario": "Recomendada, mucho mejor si la ves en IMAX.", "calificacion": 5 }
+    ]
+},
+{
+    "peliculaId": 7,
+    "reseñas": [
+    { "usuario": "Sofía", "comentario": "Muy bonita para ver en familia.", "calificacion": 5 },
+    { "usuario": "Carlos", "comentario": "No está mal.", "calificacion": 4 },
+    { "usuario": "Betty", "comentario": "En general bien, aunque esperaba más.", "calificacion": 3 }
+    ]
+},
+{
+    "peliculaId": 8,
+    "reseñas": [
+    { "usuario": "Andrés", "comentario": "Muy romántica para ver en pareja.", "calificacion": 4 },
+    { "usuario": "Carolina", "comentario": "Me llegó al corazón, super recomendada", "calificacion": 5 },
+    { "usuario": "Joao", "comentario": "Si está interesante", "calificacion": 4 }
+    ]
+},
+{
+    "peliculaId": 9,
+    "reseñas": [
+    { "usuario": "Ana", "comentario": "Muy divertida para ver con los nenes.", "calificacion": 5 },
+    { "usuario": "Luis", "comentario": "Buena.", "calificacion": 4 },
+    { "usuario": "Clara", "comentario": "Interesante, la vi con mi sobrino.", "calificacion": 3 }
+    ]
+}
+]

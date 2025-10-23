@@ -40,12 +40,16 @@
             <div class="card-body">
               <h5 class="card-title">Sinopsis</h5>
               <p id="sinopsis" class="card-text"></p>
+              <hr>
+              <h5>Reseñas</h5>
+              <div id="resenas" class="mt-3"></div>
 
               <!-- Componente: Badge de género -->
               <span id="genero" class="badge bg-secondary"></span>
               <!-- Componente: Badge de estado -->
               <span id="estado" class="badge"></span>
-               <!-- Precio -->
+
+              <!-- Precio -->
               <p id="precio" class="mt-2"></p>
             </div>
           </div>
@@ -76,13 +80,33 @@
               $("#sinopsis").text(peli.sinopsis);
               $("#trailer").attr("src", peli.trailer);
               $("#genero").text(peli.genero.join(", "));
+              $.getJSON("../data/resenas.json", function (data) {
+                const reseñasPeli = data.find(r => r.peliculaId == id);
+                if (reseñasPeli) {
+                  let htmlReseñas = "";
+                  reseñasPeli.reseñas.forEach(r => {
+                    htmlReseñas += `
+                    <div class="card mb-2">
+                      <div class="card-body">
+                          <h6 class="card-subtitle mb-1 text-muted">${r.usuario}</h6>
+                            <p>${r.comentario}</p>
+                            <div>${renderStars(r.calificacion)}</div>
+                      </div>
+                    </div>
+                    `;
+                    });
+                  $("#resenas").html(htmlReseñas);
+                } else {
+                  $("#resenas").html("<p class='text-muted'>No hay reseñas disponibles.</p>");
+                }   
+            });
               
               // Calculo de estado de estreno
               const hoy = new Date();
               const fechaEstreno = new Date(peli.estreno);
               const diasDesdeEstreno = (hoy - fechaEstreno) / (1000 * 60 * 60 * 24);
               const esEstreno = diasDesdeEstreno <= 120;
-              
+
               // badge dinamico
               if (esEstreno) {
                 $("#estado")
@@ -107,6 +131,14 @@
             mostrarError();
           },
         });
+
+        function renderStars(cantidad) {
+          let stars = "";
+          for (let i = 1; i <= 5; i++) {
+            stars += i <= cantidad ? "⭐" : "☆";
+          }
+          return stars;
+        }
 
         function mostrarError() {
           $("#detalle-pelicula").html(`
