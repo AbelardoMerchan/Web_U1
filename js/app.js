@@ -43,8 +43,21 @@ $(document).ready(function () {
             $("#trailerFrame").attr("src", "");
         });
 
+        // Mostrar alerta de bienvenida
+        $(document).ready(function () {
+        // Verifica si ya se mostró antes
+        if (!localStorage.getItem("alertaBienvenidaMostrada")) {
+        // Muestra la alerta
+        $("#alerta-bienvenida").removeClass("d-none");
+
+    // Guardar en localStorage para que no vuelva a salir
+    localStorage.setItem("alertaBienvenidaMostrada", "true");
+  }
+});
+
         }, 5000); // 5 segundos
       },
+
       error: function (xhr, status, error) {
         console.error("Error al cargar las películas:", error);
         $("#lista-peliculas").html(`
