@@ -22,12 +22,27 @@ $(document).ready(function () {
                     <p class="card-text"><strong>Precio: </strong> $${precio.toFixed(2)}</strong></p>
                     <a href="pages/detalle.html?id=${peli.id}" class="btn btn-primary me-2">Ver más</a>
                     <a href="pages/renta.html" class="btn btn-success">Rentar</a>
-
+                    <a href="#" class="btn btn-warning ver-trailer" data-trailer="${peli.trailer}">Ver tráiler</a>
                   </div>
                 </div>
               </div>`;
           });
           $("#lista-peliculas").html(html);
+
+          // Delegación de eventos para abrir tráiler en modal
+          $(document).on("click", ".ver-trailer", function (e) {
+            e.preventDefault();
+            const trailerUrl = $(this).data("trailer");
+            $("#trailerFrame").attr("src", trailerUrl);
+            const modal = new bootstrap.Modal(document.getElementById("trailerModal"));
+            modal.show();
+        });
+
+          // Limpiar el iframe al cerrar modal (para detener el video)
+          $("#trailerModal").on("hidden.bs.modal", function () {
+            $("#trailerFrame").attr("src", "");
+        });
+
         }, 5000); // 5 segundos
       },
       error: function (xhr, status, error) {
