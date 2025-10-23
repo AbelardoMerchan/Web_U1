@@ -20,7 +20,9 @@ $(document).ready(function () {
                     <h5 class="card-title">${peli.titulo}</h5>
                     <p class="card-text"><strong>Géneros: </strong>${peli.genero.join(", ")}</p>
                     <p class="card-text"><strong>Precio: </strong> $${precio.toFixed(2)}</strong></p>
-                    <a href="pages/detalle.html?id=${peli.id}" class="btn btn-primary">Ver más</a>
+                    <a href="pages/detalle.html?id=${peli.id}" class="btn btn-primary me-2">Ver más</a>
+                    <a href="pages/renta.html" class="btn btn-success">Rentar</a>
+
                   </div>
                 </div>
               </div>`;
