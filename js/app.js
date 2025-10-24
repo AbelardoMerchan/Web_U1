@@ -27,7 +27,13 @@ $(document).ready(function () {
                 </div>
               </div>`;
           });
+          // Inserta las películas con animacion
           $("#lista-peliculas").html(html);
+          $("#lista-peliculas .card").hide().each(function(i) {
+          $(this).delay(200 * i).fadeIn(600);
+          });
+
+
 
           // Delegación de eventos para abrir tráiler en modal
           $(document).on("click", ".ver-trailer", function (e) {
@@ -38,7 +44,7 @@ $(document).ready(function () {
             modal.show();
         });
 
-          // Limpiar el iframe al cerrar modal (para detener el video)
+          // Limpiar el iframe al cerrar modal
           $("#trailerModal").on("hidden.bs.modal", function () {
             $("#trailerFrame").attr("src", "");
         });

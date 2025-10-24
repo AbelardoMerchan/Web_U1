@@ -13,14 +13,17 @@
       <div class="mb-3">
         <label for="nombre" class="form-label">Nombre</label>
         <input type="text" class="form-control" id="nombre" required>
+        <div class="invalid-feedback">Por favor, ingresa tu nombre.</div>
       </div>
       <div class="mb-3">
         <label for="correo" class="form-label">Correo electrónico</label>
         <input type="email" class="form-control" id="correo" required>
+        <div class="invalid-feedback">Por favor, ingresa un correo válido.</div>
       </div>
       <div class="mb-3">
         <label for="mensaje" class="form-label">Mensaje</label>
         <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+        <div class="invalid-feedback">El mensaje debe tener entre 20 y 50 caracteres.</div>
       </div>
       <button type="submit" class="btn btn-primary">Enviar</button>
       <div id="alerta" class="alert alert-success mt-3 d-none">Mensaje enviado con éxito.</div>
@@ -31,12 +34,44 @@
   <script>
     $('#form-contacto').on('submit', function (e) {
       e.preventDefault();
-      if (this.checkValidity()) {
+      let valido = true;
+
+      // Validar nombre
+      if ($('#nombre').val().trim() === '') {
+        $('#nombre').addClass('is-invalid');
+        valido = false;
+      } else {
+        $('#nombre').removeClass('is-invalid').addClass('is-valid');
+      }
+
+      // Validar correo
+      const correo = $('#correo').val().trim();
+      const regexCorreo = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
+      if (!regexCorreo.test(correo)) {
+        $('#correo').addClass('is-invalid');
+        valido = false;
+      } else {
+        $('#correo').removeClass('is-invalid').addClass('is-valid');
+      }
+
+      // Validar mensaje
+      const mensaje = $('#mensaje').val().trim();
+      if (mensaje.length < 20 || mensaje.length > 50) {
+        $('#mensaje').addClass('is-invalid');
+        valido = false;
+      } else {
+      $('#mensaje').removeClass('is-invalid').addClass('is-valid');
+      }
+
+      // Si es válido
+      if (valido) {
         $('#alerta').removeClass('d-none').hide().fadeIn();
         setTimeout(() => $('#alerta').fadeOut(), 3000);
         this.reset();
+       $('.form-control').removeClass('is-valid'); 
       }
     });
+
   </script>
 </body>
 </html>
